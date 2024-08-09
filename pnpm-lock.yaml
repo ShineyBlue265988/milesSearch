@@ -28,8 +28,8 @@ importers:
         specifier: 0.6.0
         version: 0.6.0(esbuild@0.23.0)(solid-js@1.8.17)
       prettier:
-        specifier: 3.3.2
-        version: 3.3.2
+        specifier: 3.3.3
+        version: 3.3.3
       tsup:
         specifier: 8.1.0
         version: 8.1.0(postcss@8.4.38)(typescript@5.5.4)
@@ -1447,8 +1447,8 @@ packages:
     resolution: {integrity: sha512-Wglpdk03BSfXkHoQa3b/oulrotAkwrlLDRSOb9D0bN86FdRyE9lppSp33aHNPgBa0JKCoB+drFLZkQoRRYae5A==}
     engines: {node: ^10 || ^12 || >=14}
 
-  prettier@3.3.2:
-    resolution: {integrity: sha512-rAVeHYMcv8ATV5d508CFdn+8/pHPpXeIid1DdrPwXnaAdH7cqjVbpJaT5eq4yRAFU/lsbwYwSF/n5iNrdJHPQA==}
+  prettier@3.3.3:
+    resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -2593,6 +2593,11 @@ snapshots:
       '@covector/changelog': 0.11.0(mocha@10.2.0)
       '@covector/command': 0.7.1(mocha@10.2.0)
 
+
+      '@covector/assemble': 0.11.0(mocha@10.2.0)
+      '@covector/changelog': 0.11.0(mocha@10.2.0)
+      '@covector/command': 0.7.1(mocha@10.2.0)
+
       '@covector/assemble': 0.11.0
       '@covector/changelog': 0.11.0
       '@covector/command': 0.7.1
@@ -3166,7 +3171,7 @@ snapshots:
       picocolors: 1.0.0
       source-map-js: 1.2.0
 
-  prettier@3.3.2: {}
+  prettier@3.3.3: {}
 
   punycode@2.3.1: {}
 
