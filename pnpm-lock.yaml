@@ -15,8 +15,8 @@ importers:
         specifier: 0.40.0
         version: 0.40.0
       solid-js:
-        specifier: 1.8.17
-        version: 1.8.17
+        specifier: 1.8.20
+        version: 1.8.20
     devDependencies:
       covector:
         specifier: 0.11.0
@@ -26,7 +26,11 @@ importers:
         version: 0.23.0
       esbuild-plugin-solid:
         specifier: 0.6.0
+
+        version: 0.6.0(esbuild@0.21.5)(solid-js@1.8.20)
+
         version: 0.6.0(esbuild@0.23.0)(solid-js@1.8.17)
+
       prettier:
         specifier: 3.3.3
         version: 3.3.3
@@ -1556,14 +1560,14 @@ packages:
   serialize-javascript@6.0.0:
     resolution: {integrity: sha512-Qr3TosvguFt8ePWqsvRfrKyQXIiW+nGbYpy8XK24NQHE83caxWt+mIymTT19DGFbNWNLfEwsrkSmN64lVWB9ag==}
 
-  seroval-plugins@1.0.3:
-    resolution: {integrity: sha512-/nda3/5lVpznsbsliN8SNbx075VH6nO6lCpIknLxOPUtfqXA5ji30ThFjQD1PNed3Dnxkkj8raK/WtS8PbEuKQ==}
+  seroval-plugins@1.1.1:
+    resolution: {integrity: sha512-qNSy1+nUj7hsCOon7AO4wdAIo9P0jrzAMp18XhiOzA6/uO5TKtP7ScozVJ8T293oRIvi5wyCHSM4TrJo/c/GJA==}
     engines: {node: '>=10'}
     peerDependencies:
       seroval: ^1.0
 
-  seroval@1.0.5:
-    resolution: {integrity: sha512-TM+Z11tHHvQVQKeNlOUonOWnsNM+2IBwZ4vwoi4j3zKzIpc5IDw8WPwCfcc8F17wy6cBcJGbZbFOR0UCuTZHQA==}
+  seroval@1.1.1:
+    resolution: {integrity: sha512-rqEO6FZk8mv7Hyv4UCj3FD3b6Waqft605TLfsCe/BiaylRpyyMC0b+uA5TJKawX3KzMrdi3wsLbCaLplrQmBvQ==}
     engines: {node: '>=10'}
 
   shebang-command@2.0.0:
@@ -1584,8 +1588,8 @@ packages:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
     engines: {node: '>=8'}
 
-  solid-js@1.8.17:
-    resolution: {integrity: sha512-E0FkUgv9sG/gEBWkHr/2XkBluHb1fkrHywUgA6o6XolPDCJ4g1HaLmQufcBBhiF36ee40q+HpG/vCZu7fLpI3Q==}
+  solid-js@1.8.20:
+    resolution: {integrity: sha512-SsgaExCJ97mPm9WpAusjZ484Z8zTp8ggiueQOsrm81iAP7UaxaN+wiOgnPcJ9u6B2SQpoQ4FiDPAZBqVWi1V4g==}
 
   source-map-js@1.2.0:
     resolution: {integrity: sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==}
@@ -2161,7 +2165,6 @@ snapshots:
       - encoding
       - mocha
 
-
   '@effection/stream@2.0.6':
     dependencies:
       '@effection/core': 2.2.3
@@ -2699,6 +2702,11 @@ snapshots:
       '@covector/changelog': 0.11.0(mocha@10.2.0)
       '@covector/command': 0.7.1(mocha@10.2.0)
 
+
+      '@covector/assemble': 0.11.0(mocha@10.2.0)
+      '@covector/changelog': 0.11.0(mocha@10.2.0)
+      '@covector/command': 0.7.1(mocha@10.2.0)
+
       '@covector/assemble': 0.11.0
       '@covector/changelog': 0.11.0
       '@covector/command': 0.7.1
@@ -2773,13 +2781,22 @@ snapshots:
 
   emoji-regex@8.0.0: {}
 
+
+  esbuild-plugin-solid@0.6.0(esbuild@0.21.5)(solid-js@1.8.20):
+
   esbuild-plugin-solid@0.6.0(esbuild@0.23.0)(solid-js@1.8.17):
+
     dependencies:
       '@babel/core': 7.23.3
       '@babel/preset-typescript': 7.23.3(@babel/core@7.23.3)
       babel-preset-solid: 1.8.4(@babel/core@7.23.3)
+
+      esbuild: 0.21.5
+      solid-js: 1.8.20
+
       esbuild: 0.23.0
       solid-js: 1.8.17
+
     transitivePeerDependencies:
       - supports-color
 
@@ -3338,11 +3355,11 @@ snapshots:
     dependencies:
       randombytes: 2.1.0
 
-  seroval-plugins@1.0.3(seroval@1.0.5):
+  seroval-plugins@1.1.1(seroval@1.1.1):
     dependencies:
-      seroval: 1.0.5
+      seroval: 1.1.1
 
-  seroval@1.0.5: {}
+  seroval@1.1.1: {}
 
   shebang-command@2.0.0:
     dependencies:
@@ -3356,11 +3373,11 @@ snapshots:
 
   slash@3.0.0: {}
 
-  solid-js@1.8.17:
+  solid-js@1.8.20:
     dependencies:
       csstype: 3.1.2
-      seroval: 1.0.5
-      seroval-plugins: 1.0.3(seroval@1.0.5)
+      seroval: 1.1.1
+      seroval-plugins: 1.1.1(seroval@1.1.1)
 
   source-map-js@1.2.0: {}
 
